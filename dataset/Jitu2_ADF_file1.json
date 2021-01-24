@@ -1,0 +1,29 @@
+{
+	"name": "Jitu2_ADF_file1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Link_server_AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "BID input.txt",
+				"folderPath": "Input",
+				"container": "jitucontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "BILL_REF_NO\tBILL_REF_RESETS\tPROCESS_NUM\tBILL_INVOICE_ROW\tPACKAGE_ID\tCOMPONENT_ID\tTYPE_CODE\tSUBTYPE_CODE\tTRACKING_ID\tTRACKING_ID_SERV\tTRACKING_DATE\tPREP_SEQUENCE\tPRORATE_CODE\tBILLING_LEVEL\tBILLING_CATEGORY\tAMOUNT\tRATED_AMOUNT\tSECONDARY_AMOUNT\tRATE_CURRENCY_CODE\tUNITS\tTAX\tTAX_RATE\tTAX_PKG_INST_ID\tDISCOUNT\tDISCOUNT_ID\tTRANS_DATE\tPROVIDER_ID\tELEMENT_ID\tPRODUCT_LINE_ID\tDESCRIPTION_CODE\tRATE_TYPE\tRATE_PERIOD\tSUBSCR_NO\tSUBSCR_NO_RESETS\tEQUIP_STATUS\tFROM_DATE\tTO_DATE\tANNOTATION\tCCARD_ID\tCCARD_ID_SERV\tGEOCODE\tAUX_TAX_INFO\tFEDERAL_TAX\tSTATE_TAX\tCOUNTY_TAX\tCITY_TAX\tOTHER_TAX\tTEST_FLAG\tARCH_FLAG\tREV_RCV_COST_CTR\tB_REV_RCV_COST_CTR\tAGGR_USAGE_ID\tTAX_TYPE_CODE\tOPEN_ITEM_ID\tAMOUNT_REDUCTION\tAMOUNT_REDUCTION_ID\tZONE_CLASS\tBILL_CLASS\tINCLUSIVE_TAX\tPCM_ACTIVE_DT\tEXCHANGE_RATE\tIMPLIED_DECIMAL\tOPERATING_AMOUNT\tOPERATING_DISCOUNT\tOPERATING_TAX\tEXCHANGE_RATE_TO_BILL_CURRENCY",
+				"type": "String"
+			}
+		]
+	}
+}
